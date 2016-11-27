@@ -21,10 +21,10 @@ def preprocessData(train_data):
   day = []
   for i in train_data.time.values:
     hour.append((i/60)%24)
-    weekday.append = ((i/(60*24))%7)
-    month.append = (i/(60*24*30)) % 12 #month-ish
-    year.append = i/(60*24*365)
-    day.append = i/(60*24) % 365
+    weekday.append((i/(60*24))%7)
+    month.append((i/(60*24*30)) % 12)
+    year.append(i/(60*24*365))
+    day.append(i/(60*24) % 365)
   train_data['hour'] = hour
   train_data['weekday'] = weekday
   train_data['month'] = month
