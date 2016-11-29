@@ -1,4 +1,4 @@
-# Facebook--Footsteps-Prediction
+# Facebook Footsteps Prediction - Predict Facebook checkins
 
 ### Project Idea
 
@@ -16,6 +16,17 @@ A system which could classify and analyze social media check-in data to find pat
 6. Customized offers and personalized customer based advertising on social media and other networks.
 
 ### Dataset
+
+The dataset contains train and test data files with below columns:
+
+1. row_id -> id of the checkin event
+2. x -> x coordinate of checkin
+3. y -> y coordinate of checkin
+4. accuracy - location accuracy
+5. timestamp - timestamp of checkin
+6. place_id -> business id
+
+One of the major challenges was to make the data more meaningful by finding patterns on features. Hence, data preprocessing and feature extraction is a critical step in this scenario.
 
 ### Exploratory Analysis
 
