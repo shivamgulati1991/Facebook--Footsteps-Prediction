@@ -2,7 +2,7 @@
 
 ### Project Idea
 
-The idea is to predict where a user could be checking into from their location and timestamp. This project was a coding challenge on kaggle.com, and the dataset we are using is from the website itself.
+The idea is to predict where a user could be checking into from their location and timestamp. This project was a [coding challenge](https://www.kaggle.com/c/facebook-v-predicting-check-ins) on kaggle.com, and the dataset we are using is from the website itself.
 
 A system which could classify and analyze social media check-in data to find patterns on how users check-in activity would be beneficial for the customers and businesses. Although, achieving this would never have a hundred percent accuracy, but a good prediction would certainly do wonders for both.
 
