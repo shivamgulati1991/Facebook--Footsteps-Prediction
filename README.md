@@ -32,6 +32,14 @@ One of the major challenges was to make the data more meaningful by finding patt
 
 ### Techniques used
 
+We implemented the below approaches to compare and get the best results.
+
+#### K Nearest Neighbour
+
+#### Random Forest
+
+#### Boosted Trees
+
 ### Results
 
 ### References
