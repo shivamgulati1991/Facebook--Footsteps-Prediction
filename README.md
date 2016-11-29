@@ -1,4 +1,4 @@
-# Facebook Footsteps Prediction - Predict Facebook checkins
+# Facebook Footsteps - Predict Facebook checkins
 
 ### Project Idea
 
