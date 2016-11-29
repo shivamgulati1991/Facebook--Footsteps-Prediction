@@ -43,3 +43,6 @@ We implemented the below approaches to compare and get the best results.
 ### Results
 
 ### References
+
+1. Problem Statement - https://www.kaggle.com/c/facebook-v-predicting-check-ins
+2. Dataset - https://www.kaggle.com/c/facebook-v-predicting-check-ins/data
