@@ -30,6 +30,8 @@ One of the major challenges was to make the data more meaningful by finding patt
 
 ### Exploratory Analysis
 
+![Exploration](https://github.com/shivamgulati1991/Facebook--Footsteps-Prediction/blob/master/Exploratory%20Analysis/Rplot01.png)
+
 ### Techniques used
 
 We implemented the below approaches to compare and get the best results.
