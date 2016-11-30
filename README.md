@@ -72,6 +72,14 @@ To improve the accuracy further, we tried boosted trees i.e. tree ensemble model
 
 ### Results
 
+We obtained the below accuracies:
+
+| Method        | Accuracy      |
+| ------------- |:-------------:|
+| KNN           | 0.42          |
+| Random Forest | 0.48          |
+| Boosted Trees | 0.54          |
+
 
 ### References
 
