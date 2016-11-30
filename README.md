@@ -64,7 +64,7 @@ Once we have a smaller grid of 250 X 250 meters in place first thing that comes 
 
 #### Random Forest
 
-Random Forest was our second choice for the classifier as it is efficient and generally results in more accurate results. The performance factor of random forest is important for us as we are doing classification task on the fly. We chose random forest also because it gives us estimate of the importance of different variables in classification task this helped us in fine-tuning our model for other classifiers as well. We tried different flavors of Random Forest available in Python and achieved best results using sklearn random forest classifier.
+Random Forest was our second choice for the classifier as it is efficient and generally results in more accurate results. The performance factor of random forest is important for us as we are doing classification task on the fly. We chose random forest also because it gives us estimate of the importance of different variables in classification task this helped us in fine-tuning our model for other classifiers as well. We tried different flavors of Random Forest available in Python and achieved best results using [sklearn](http://scikit-learn.org/) random forest classifier.
 
 #### Boosted Trees
 
@@ -77,3 +77,5 @@ To improve the accuracy further, we tried boosted trees i.e. tree ensemble model
 
 1. Problem Statement - https://www.kaggle.com/c/facebook-v-predicting-check-ins
 2. Dataset - https://www.kaggle.com/c/facebook-v-predicting-check-ins/data
+3. sklearn - http://scikit-learn.org/
+4. XGBoost - http://xgboost.readthedocs.io/en
