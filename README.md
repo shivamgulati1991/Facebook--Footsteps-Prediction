@@ -58,15 +58,15 @@ These plots confirm our understanding that check-ins from user depends on the di
 
 Post the processing, wee implemented the below approaches to compare and get the best results.
 
-#### * K Nearest Neighbour
+* K Nearest Neighbour
 
 Once we have a smaller grid of 250 X 250 meters in place first thing that comes to mind is KNN for the classification task. It is very easy to implement and give good results. The only tricky part about applying KNN is finding out the optimal weights for the variables used. We have used hit and trial method to optimize our model. We plan to use data exploratory techniques in future to narrow down on optimal weights for KNN in final version of the report.
 
-#### * Random Forest
+* Random Forest
 
 Random Forest was our second choice for the classifier as it is efficient and generally results in more accurate results. The performance factor of random forest is important for us as we are doing classification task on the fly. We chose random forest also because it gives us estimate of the importance of different variables in classification task this helped us in fine-tuning our model for other classifiers as well. We tried different flavors of Random Forest available in Python and achieved best results using [sklearn](http://scikit-learn.org/) random forest classifier.
 
-#### * Boosted Trees
+* Boosted Trees
 
 To improve the accuracy further, we tried boosted trees i.e. tree ensemble model for classification and regression trees (CART). We used [XGBoost library](http://xgboost.readthedocs.io/en/latest/model.html), short for “Extreme Gradient Boosting”, where the term “Gradient Boosting” is proposed in the paper Greedy Function Approximation: A Gradient Boosting Machine, by Friedman.
 
