@@ -30,19 +30,33 @@ One of the major challenges was to make the data more meaningful by finding patt
 
 ### Exploratory Analysis
 
+To reinforce our understanding of the problem and to visualize the data we start by plotting all the check-ins within a smaller grid of 500 X 500 meters taken at random from the given larger grid. We have plotted only place_ids that have more than 100 check-ins to visualize the clusters.
+
 ![Exploration](https://github.com/shivamgulati1991/Facebook--Footsteps-Prediction/blob/master/Exploratory%20Analysis/Rplot01.png)
+
+To make these clusters separable and more evident we tried using one more feature “hour of the day” as the third dimension for our plot.
+Addition of third dimension helps and we can see that our assumption that hour of day affects the check-ins for a place is valid. We tried plotting the same data using “weekday” feature that resulted in similar plot. These plots confirm our understanding that check-ins from user depends on the different time components like hour of the day and weekday.
+
+![Exploration](https://github.com/shivamgulati1991/Facebook--Footsteps-Prediction/blob/master/Exploratory%20Analysis/Rplot03.png)
 
 ### Techniques used
 
-We implemented the below approaches to compare and get the best results.
+Post the processing, wee implemented the below approaches to compare and get the best results.
 
 #### K Nearest Neighbour
 
+Once we have a smaller grid of 250 X 250 meters in place first thing that comes to mind is KNN for the classification task. It is very easy to implement and give good results. The only tricky part about applying KNN is finding out the optimal weights for the variables used. We have used hit and trial method to optimize our model. We plan to use data exploratory techniques in future to narrow down on optimal weights for KNN in final version of the report.
+
 #### Random Forest
+
+Random Forest was our second choice for the classifier as it is efficient and generally results in more accurate results. The performance factor of random forest is important for us as we are doing classification task on the fly. We chose random forest also because it gives us estimate of the importance of different variables in classification task this helped us in fine-tuning our model for other classifiers as well. We tried different flavors of Random Forest available in Python and achieved best results using sklearn random forest classifier.
 
 #### Boosted Trees
 
+To improve the accuracy further, we tried boosted trees i.e. tree ensemble model for classification and regression trees (CART). We used [XGBoost library](http://xgboost.readthedocs.io/en/latest/model.html), short for “Extreme Gradient Boosting”, where the term “Gradient Boosting” is proposed in the paper Greedy Function Approximation: A Gradient Boosting Machine, by Friedman.
+
 ### Results
+
 
 ### References
 
