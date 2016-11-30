@@ -30,7 +30,17 @@ One of the major challenges was to make the data more meaningful by finding patt
 
 ### Exploratory Analysis
 
-To reinforce our understanding of the problem and to visualize the data we start by plotting all the check-ins within a smaller grid of 500 X 500 meters taken at random from the given larger grid. We have plotted only place_ids that have more than 100 check-ins to visualize the clusters.
+To reinforce our understanding of the problem and to visualize the data we start by plotting all the check-ins within a smaller grid of 500 X 500 meters taken at random from the given larger grid. 
+We used R script to generate the plot. The script is CreatePlots.R in the repository. A subset of script which generates the same is
+```
+ggplot(small_trainz, aes(x, y )) +
+  geom_point(aes(color = place_id)) + 
+  theme_minimal() +
+  theme(legend.position = "none") +
+  ggtitle("Check-ins for a smaller 500 X 500m grid")
+```
+
+We have plotted only place_ids that have more than 100 check-ins to visualize the clusters.
 
 ![Exploration](https://github.com/shivamgulati1991/Facebook--Footsteps-Prediction/blob/master/Exploratory%20Analysis/Rplot01.png)
 
