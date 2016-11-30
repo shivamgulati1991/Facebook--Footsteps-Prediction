@@ -80,6 +80,18 @@ We obtained the below accuracies:
 | Random Forest | 0.48          |
 | Boosted Trees | 0.54          |
 
+### Learnings
+
+* Spatial data and ways to handle it
+* Different classifiers - pros and cons
+* Data exploration and feature analysis for Big Data
+
+### Future Enhancements
+
+* Improved processing for better results
+* Offline Data Processing for Real-Time Results
+* Recommendations based on Check-ins
+* Ensemble and Improved Models
 
 ### References
 
