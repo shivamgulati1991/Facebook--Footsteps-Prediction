@@ -45,7 +45,12 @@ We have plotted only place_ids that have more than 100 check-ins to visualize th
 ![Exploration](https://github.com/shivamgulati1991/Facebook--Footsteps-Prediction/blob/master/Exploratory%20Analysis/Rplot01.png)
 
 To make these clusters separable and more evident we tried using one more feature “hour of the day” as the third dimension for our plot.
-Addition of third dimension helps and we can see that our assumption that hour of day affects the check-ins for a place is valid. We tried plotting the same data using “weekday” feature that resulted in similar plot. These plots confirm our understanding that check-ins from user depends on the different time components like hour of the day and weekday.
+Addition of third dimension helps and we can see that our assumption that hour of day affects the check-ins for a place is valid. We tried plotting the same data using “weekday” feature that resulted in similar plot. The same was generated as
+```
+plot_ly(data = small_trainz, x = small_trainz$x , y = small_trainz$y, z = small_trainz$hour, color = small_trainz$place_id,  type = "scatter3d", mode = "markers", marker=list(size= 5)) %>% layout(title = "Place_ids clustered by x, y and hour of day")
+```
+
+These plots confirm our understanding that check-ins from user depends on the different time components like hour of the day and weekday.
 
 ![Exploration](https://github.com/shivamgulati1991/Facebook--Footsteps-Prediction/blob/master/Exploratory%20Analysis/Rplot03.png)
 
