@@ -82,6 +82,7 @@ We obtained the below accuracies:
 
 Our best results were with the XGBoost library for Boosted trees with an accuracy of 0.54.
 
+![Results](https://github.com/shivamgulati1991/Facebook--Footsteps-Prediction/blob/master/result.PNG)
 ### Learnings
 
 * Spatial data and ways to handle it
