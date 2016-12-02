@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
-
+from sklearn.esemble import GradientBoostingClassifier
 
 # input data from train.csv
 def inputDataSet():
@@ -109,7 +109,7 @@ def classifyRowRandomForest(row, train_data):
 # Applying Boosted trees classifier using XGBoost
 def classifyRowBoostedTree(row, train_data):
     #Applying the classifier
-    clf = RandomForestClassifier(n_estimators=150, max_depth=None, n_jobs=-1, min_samples_split=4,random_state=0)
+    clf = GradientBoostingClassifier(loss='deviance',n_estimators=150, max_depth=None, min_samples_split=2, random_state=None)
     X = train_data.drop('place_id', 1)
     clf.fit(X, train_data['place_id'])
     del row[-1]
