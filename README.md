@@ -80,6 +80,8 @@ We obtained the below accuracies:
 | Random Forest | 0.48          |
 | Boosted Trees | 0.54          |
 
+Our best results were with the XGBoost library for Boosted trees with an accuracy of 0.54.
+
 ### Learnings
 
 * Spatial data and ways to handle it
